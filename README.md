@@ -7,6 +7,8 @@ This is a startup guide for using the EPFL compute clusters (particularly RCP, a
 
 As a broad overview, we have **scratch** storage on RCP at `/mnt/upschrimpf2/scratch/<your_gaspar_username>`. This is where your files (including your code) should be stored. You will be working from the root of your RCP login, and storing things on scratch. There is also `/home/<your_gaspar_username>`. Ignore this, it is confusing.
 
+This guide is built on top of similar guides from the [MLO lab](https://github.com/epfml/getting-started) and [NLP lab](https://epic-guide.github.io/tools/ic-compute-storage), as well as the [RCP Wiki](https://wiki.rcp.epfl.ch/).
+
 ## pre-setup / installs
 
 ### Run:AI
