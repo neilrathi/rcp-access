@@ -73,6 +73,7 @@ RUN DUMMY=${DUMMY}
 
 # The ENTRYPOINT describes which file to run once the node is setup.
 # This can be your experiment script
+COPY ./.env .
 COPY ./.bashrc .
 COPY ./entrypoint.sh .
 
