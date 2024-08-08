@@ -15,6 +15,7 @@ export HF_MODULES_CACHE="${HF_HOME}/modules"
 export WORK_DIR="${NFS_MOUNT}/$1"
 
 # get conda setup
+source .env
 source .bashrc
 
 # >>> conda initialize >>>
@@ -42,6 +43,9 @@ conda activate $2
 
 # shift args 2 --> 1, 3 --> 2
 shift
+
+# login to wandb
+wandb login ${WANDB_API_KEY}
 
 # run #2 (formerly #1) with all command line args included
 python "${@:2}" 2>&1 | tee -a "runai_output.txt" || { echo 'Success criteria evaluation failed' ; exit 1; }
