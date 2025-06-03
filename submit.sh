@@ -10,8 +10,8 @@ script=$3
 gpus=${4:-0}
 cpus=${5:-1}
 
-REPO_DIR='topo-eval'
-CONDA_ENV='topo'
+REPO_DIR='topo2.0'
+CONDA_ENV='topo-env'
 
 # train mode
 if [ "$command" == "train" ]; then
