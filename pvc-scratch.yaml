@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: runai-upschrimpf2-<USER_NAME>-scratch
+  namespace: runai-upschrimpf2-<USER_NAME>
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 100Gi
