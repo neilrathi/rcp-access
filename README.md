@@ -129,8 +129,8 @@ First, make sure you have the following files in your working directory:
 **Setting up .env:** First, connect to haas and run `id -a`, which will give you a bunch of id values. In `.env`, set
 
 ```bash
-GROUP_ID=<value of upschrimpf_storage_scratch_rcp_AppGrpU>
-GROUP_NAME="UPSCHRIMPF2-StaffU"
+GROUP_ID=<value of upschrimpf_storage_scratch_rcp_AppGrpU> # 80443 was the number in June 2025
+GROUP_NAME="doesntmatter" # upschrimpf_storage_scratch_rcp_AppGrpU is longer than 32 chars
 USER_ID=<value of uid>
 ```
 
